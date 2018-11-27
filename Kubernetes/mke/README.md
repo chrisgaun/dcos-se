@@ -155,9 +155,9 @@ deploy (serial strategy) (COMPLETE)
 
 Create the `kubernetes-cluster2` Service Account:
 ```
-dcos security org service-accounts keypair private-key.pem public-key.pem
-dcos security org service-accounts create -p public-key.pem -d 'Kubernetes service account' kubernetes-cluster2
-dcos security secrets create-sa-secret private-key.pem kubernetes-cluster2 kubernetes-cluster2/sa
+dcos security org service-accounts keypair private-key2.pem public-key2.pem
+dcos security org service-accounts create -p public-key2.pem -d 'Kubernetes service account' kubernetes-cluster2
+dcos security secrets create-sa-secret private-key2.pem kubernetes-cluster2 kubernetes-cluster2/sa
 ```
 
 Grant the `kubernetes-cluster2` Service Account permissions:
